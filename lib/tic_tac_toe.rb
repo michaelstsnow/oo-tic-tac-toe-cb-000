@@ -2,7 +2,6 @@ class TicTacToe
   def initialize
     #Lets set the initial board blank
     @board=[" ", " ", " ", " ", " ", " ", " ", " ", " "]
-    play
   end
 
 # Winning Combinations
