@@ -16,21 +16,6 @@ WIN_COMBINATIONS = [
   [6,4,2], #Diagnol Two
 ]
 
-#this is the overall method to play a game of tic tac toe
-def play
-  until over?
-    turn
-  end
-#when it exits this loop the game will be over
-  winning_player=[]
-  if draw?
-    puts "Cat's Game!"
-  else
-    winning_player = winner
-    puts "Congratulations #{winning_player}!"
-  end
-end
-
 # This method displays the board
 def display_board
   puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
@@ -156,7 +141,20 @@ def winner
   end
 end
 
-
+#this is the overall method to play a game of tic tac toe
+def play
+  until over?
+    turn
+  end
+#when it exits this loop the game will be over
+  winning_player=[]
+  if draw?
+    puts "Cat's Game!"
+  else
+    winning_player = winner
+    puts "Congratulations #{winning_player}!"
+  end
+end
 
 
 
